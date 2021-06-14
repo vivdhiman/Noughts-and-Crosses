@@ -1,0 +1,412 @@
+// --------------------NAVBAR--------------------
+
+.navbar {
+    display: flex;
+    box-shadow: 0px 4px 10px gray;
+    flex-direction: row;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+}
+
+.logo-title {
+    width: 50%;
+    display: flex;
+    padding: 5px 5px 5px 20px;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo {
+    width: 55px;
+    display: inline;
+}
+
+.h1 {
+    margin: 0px;
+    line-height: 20px;
+}
+
+.title {
+    margin: 0px 0px 0px 5px;
+    display: inline;
+}
+
+.statistics {
+    width: 50%;
+    display: flex;
+    transition: 0.4s;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: large;
+    padding: 5px 20px 5px 5px;
+}
+
+.winstat {
+    padding-right: 15px;
+}
+
+// --------------------LOGIN--------------------
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    background: white;
+    box-shadow: 6px 6px 5px gray;
+}
+
+.input {
+    border: 1px solid #080b1a;
+    display: block;
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+
+    &:focus {
+        border: 1px solid #080b1a;
+        border-radius: 50px;
+        outline-offset: 0px;
+        outline: none;
+    }
+}
+
+.btn-submit {
+    background-color: #080b1a;
+    border: 1px solid #080b1a;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 20px;
+    width: 90%;
+    // margin-bottom: 15px;
+    border-radius: 50px;
+    margin: 10px 15px 15px;
+
+    &:hover {
+        // color: #2b2d33;
+        background-color: #2b2d33;
+    }
+    &:focus {
+        border-radius: 50px;
+        border: 1px solid #080b1a;
+        outline-offset: 0px;
+        outline: none;
+    }
+}
+
+// --------------------GAME--------------------
+
+.game {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.turn-text {
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+// --------------------BOARD--------------------
+
+.board {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 10px gray;
+}
+
+.tile {
+    width: 113px;
+    height: 113px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 400;
+}
+
+#tile0 {
+    border-right: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+#tile1 {
+    border-left: 2.5px solid black;
+    border-right: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+#tile2 {
+    border-left: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+#tile3 {
+    border-top: 2.5px solid black;
+    border-right: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+#tile4 {
+    border: 2.5px solid black;
+}
+
+#tile5 {
+    border-top: 2.5px solid black;
+    border-left: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+#tile6 {
+    border-right: 2.5px solid black;
+    border-top: 2.5px solid black;
+}
+
+#tile7 {
+    border-left: 2.5px solid black;
+    border-right: 2.5px solid black;
+    border-top: 2.5px solid black;
+}
+
+#tile8 {
+    border-left: 2.5px solid black;
+    border-top: 2.5px solid black;
+}
+
+// ----------------Media Queries--------------------
+
+// For S screen
+@media screen and (max-width: 320px) {
+    .navbar {
+        display: flex;
+        box-shadow: 0px 4px 10px gray;
+        flex-direction: column;
+        transition: 0.4s;
+        border-bottom: 1px solid black;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 45px;
+        // display: inline;
+    }
+
+    .logo-title {
+        align-items: center;
+        justify-content: center;
+    }
+    .h1 {
+        margin: auto;
+    }
+
+    .statistics {
+        width: 90%;
+        transition: 0.4s;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+    }
+    .game {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
+    .board {
+        height: 280px;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 6px 6px 10px gray;
+    }
+
+    .tile {
+        width: 90px;
+        height: 90px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
+        font-weight: 300;
+    }
+}
+
+// For M screen
+@media screen and (max-width: 375px) {
+    .navbar {
+        display: flex;
+        box-shadow: 0px 4px 10px gray;
+        flex-direction: column;
+        transition: 0.4s;
+        border-bottom: 1px solid black;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 45px;
+        // display: inline;
+    }
+
+    .logo-title {
+        align-items: center;
+        justify-content: center;
+    }
+    .h1 {
+        margin: auto;
+    }
+
+    .statistics {
+        width: 90%;
+        transition: 0.4s;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+    }
+    .game {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
+    .board {
+        height: 280px;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 6px 6px 10px gray;
+    }
+
+    .tile {
+        width: 90px;
+        height: 90px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
+        font-weight: 300;
+    }
+}
+
+// For L screen
+@media screen and (max-width: 425px) {
+    .navbar {
+        display: flex;
+        box-shadow: 0px 4px 10px gray;
+        flex-direction: column;
+        transition: 0.4s;
+        border-bottom: 1px solid black;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 45px;
+        // display: inline;
+    }
+
+    .logo-title {
+        align-items: center;
+        justify-content: center;
+    }
+    .h1 {
+        margin: auto;
+    }
+
+    .statistics {
+        width: 90%;
+        transition: 0.4s;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+    }
+    .game {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
+    .board {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 6px 6px 10px gray;
+    }
+
+    .tile {
+        width: 96px;
+        height: 97px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
+        font-weight: 300;
+    }
+}
