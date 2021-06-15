@@ -1,6 +1,6 @@
 {
   "name": "tictactoe",
-  "homepage": "https://vivdhiman.github.io/Tic-Tac-Toe",
+  "homepage": "https://vivdhiman.github.io/Noughts-and-Crosses",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
