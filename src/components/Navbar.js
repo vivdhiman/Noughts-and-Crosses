@@ -12,7 +12,7 @@ export default class Navbar extends Component {
                         <img className='logo' src={Logo} alt='logo' />
                     </div>
                     <div className='title'>
-                        <h1 className='h1'>TicTacToe</h1>
+                        <h1 className='h1'>O's&X's</h1>
                         <small>Just for fun!! <ImWink color="purple" size="15px" /></small>
                     </div>
                 </div>
