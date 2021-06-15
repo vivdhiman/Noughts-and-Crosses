@@ -47,6 +47,7 @@ export default class Login extends Component {
                                 placeholder='Player 2'
                                 value={this.state.value}
                                 onChange={this.handleInputChange} />
+                            <small >Player 1 & 2 will have X & O respectively </small>
                         </div>
 
                         <button
