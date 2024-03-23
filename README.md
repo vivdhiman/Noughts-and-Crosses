@@ -1,4 +1,4 @@
-# You can see the running website of this project [HERE](https://ninjacoderdotcom.github.io/Noughts-and-Crosses/).
+# You can see the running website of this project [HERE](https://vivekd95.github.io/Noughts-and-Crosses/).
 
 ### To run this project, Follow these steps:
 1.) Download it.\
